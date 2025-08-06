@@ -1,67 +1,41 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  Button,
-  TextField,
-  Card,
-  CardContent,
-  Avatar,
-  Rating,
-  Stack,
-} from "@mui/material";
-import StarIcon from "@mui/icons-material/Star";
+import { Box, Typography, Button, TextField } from "@mui/material";
 import Slider from "./Slider";
+import useStyles from "./style";
+
 const HomePage = () => {
+  const classes = useStyles();
   return (
-    <Box
-      sx={{
-        minHeight: "100vh",
-        backgroundImage: `url('/assests/images/grass.png')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        p: 2,
-        color: "white",
-      }}
-    >
-      {/* Header Section */}
-      <Box sx={{ textAlign: "center", }}>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          {/* <Typography variant="h6" sx={{ fontWeight: "bold", color: "#ffffffff" }}>
-          GREENPAL
-        </Typography> */}
-          <img src="/assests/images/greenpal.png" alt="Greenpal logo" width={120} height={90} />
-          <Button
-            variant="contained"
-            sx={{
-              position: "absolute",
-              right: 16,
-              top: 40,
-              backgroundColor: "#FF7F00",
-              fontWeight: "bold",
-              textTransform: "capitalize",
-              padding: "10px 20px",
-              borderRadius: "50px",
-              "&:hover": { backgroundColor: "#FF8C00" },
-            }}
-          >
+    <Box className={classes.container}>
+      <Box className={classes.headerBox_main}>
+        <Box className={classes.headerBox}>
+          <img
+            src="/assests/images/greenpal.png"
+            alt="Greenpal logo"
+            className={classes.main_logo}
+          />
+          <Button variant="contained" className={classes.see_priceBtn}>
             See Prices
           </Button>
         </Box>
-        <Typography
-          variant="h4"
-          sx={{ fontWeight: "bold", mt: 3, color: "white" }}
-        >
+        <Typography variant="h4" sx={{ mt: 3 }} className={classes.main_title}>
           Professional Lawn Care Services in Columbus
         </Typography>
-        <Typography variant="subtitle1" sx={{ mt: 1, color: "#eee", fontWeight: "bold", fontSize: "20px" }}>
+        <Typography
+          variant="subtitle1"
+          sx={{ mt: 1 }}
+          className={classes.main_subtitle}
+        >
           Fast, Easy, & Free Quotes
         </Typography>
-        <Typography variant="body1" sx={{ mt: 6, mb: 0, fontSize: 14, fontWeight: "bold" }}>
+        <Typography
+          variant="body1"
+          sx={{ mt: 6, mb: 0 }}
+          className={classes.main_subtitle2}
+        >
           Book your grass cutting in 60 seconds ↴
         </Typography>
-        {/* Address input */}
-        <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", }}>
+        <Box className={classes.textfield_box}>
           <TextField
             placeholder="Enter your house address"
             variant="outlined"
@@ -90,13 +64,8 @@ const HomePage = () => {
             sx={{
               mt: 2,
               width: { xs: "80%", ms: "80%", md: "40%", lg: "40%" },
-              background: "linear-gradient(to bottom, #f5a835ff, #FF7F00)",
-              borderRadius: "25px",
-              fontWeight: "bold",
-              // py: 1.5,
-              padding: "16px 20px",
-              textTransform: "capitalize",
             }}
+            className={classes.price_btn}
           >
             See Prices
           </Button>
@@ -107,8 +76,3 @@ const HomePage = () => {
   );
 };
 export default HomePage;
-
-
-
-
-

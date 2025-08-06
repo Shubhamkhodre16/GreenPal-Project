@@ -7,38 +7,16 @@ import {
   Rating,
   Stack,
   Button,
-  Chip
+  Chip,
 } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { lawnPros } from "../helpers/helper";
+
 export default function LawnProSlider() {
-  const lawnPros = [
-    {
-      name: "Green Lawn Care",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
-      rating: 4.8,
-      reviews: 109,
-      price: 75,
-    },
-    {
-      name: "Fresh Cut Co.",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
-      rating: 4.5,
-      reviews: 92,
-      price: 70,
-    },
-    {
-      name: "EcoLawn Services",
-      image: "https://randomuser.me/api/portraits/men/65.jpg",
-      rating: 4.9,
-      reviews: 120,
-      price: 80,
-    },
-    // Add more as needed...
-  ];
   return (
     <Box sx={{ mt: 0 }}>
       <Typography
@@ -65,16 +43,27 @@ export default function LawnProSlider() {
           1200: { slidesPerView: 6 },
         }}
       >
-        {lawnPros.map((pro, index) => (
+        {lawnPros?.map((pro, index) => (
           <SwiperSlide key={index}>
             <Box display="flex" justifyContent="center">
-              <Card sx={{ width: 300, borderRadius: 4, height: 280, position: "relative" }}>
+              <Card
+                sx={{
+                  width: 300,
+                  borderRadius: 4,
+                  height: 280,
+                  position: "relative",
+                }}
+              >
                 {/* Mowing Chip in Top-Right */}
                 <Chip
                   label={
                     <Box sx={{ textAlign: "center" }}>
                       ${pro.price}
-                      <Typography variant="caption" display="block" sx={{ lineHeight: 1 }}>
+                      <Typography
+                        variant="caption"
+                        display="block"
+                        sx={{ lineHeight: 1 }}
+                      >
                         /mowing
                       </Typography>
                     </Box>
@@ -90,17 +79,14 @@ export default function LawnProSlider() {
                     borderRadius: "8px",
                     px: 0.5,
                     py: 1.5,
-                    height:"40px",
+                    height: "40px",
                     fontSize: "14px",
                     zIndex: 1,
                   }}
                 />
                 <CardContent sx={{ p: 2 }}>
                   <Stack direction="row" spacing={2} alignItems="center">
-                    <Avatar
-                      src={pro.image}
-                      sx={{ width: 56, height: 56 }}
-                    />
+                    <Avatar src={pro.image} sx={{ width: 56, height: 56 }} />
                     <Box>
                       <Typography
                         variant="subtitle1"
@@ -141,8 +127,8 @@ export default function LawnProSlider() {
                       borderRadius: "20px",
                       fontWeight: "bold",
                       textTransform: "none",
-                      width:"100px",
-                      paddingLeft:"30px"
+                      width: "100px",
+                      paddingLeft: "30px",
                     }}
                   >
                     Hire Me
