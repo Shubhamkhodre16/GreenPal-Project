@@ -1,0 +1,70 @@
+.toprated-section {
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+}
+
+.toprated-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.toprated-card {
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.toprated-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.toprated-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.toprated-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.toprated-stars {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.toprated-btn {
+  margin: 12px 0;
+  padding: 8px 24px;
+  font-size: 14px;
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 25px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.toprated-quote {
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+}
+
+.toprated-readmore {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .toprated-section {
+    padding: 60px 100px;
+  }
+}
