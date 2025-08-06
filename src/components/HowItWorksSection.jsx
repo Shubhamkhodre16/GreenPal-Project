@@ -5,7 +5,7 @@ const steps = [
   {
     number: 1,
     title: "Your Details",
-    image: "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg", // Replace with actual step image
+    image: "/assests/images/YourDetail.png", // Replace with actual step image
   },
   {
     number: 2,

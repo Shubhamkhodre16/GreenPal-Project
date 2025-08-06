@@ -6,7 +6,7 @@ import StarIcon from "@mui/icons-material/Star";
 const RankInfoCard = () => {
   return (
     <Container
-      maxWidth="sm"
+      maxWidth="md"
       sx={{
         textAlign: "center",
         py: { xs: 4, md: 6 },
@@ -40,12 +40,12 @@ const RankInfoCard = () => {
 
       {/* Title */}
       <Typography
-        variant="h6"
+        // variant="h4"
         component="h2"
         gutterBottom
         sx={{
           fontWeight: 600,
-          fontSize: { xs: "1.1rem", md: "1.3rem" },
+          fontSize: { xs: "1.5rem", md: "1.3rem" },
           color: "#222",
           lineHeight: 1.4,
         }}

@@ -34,6 +34,60 @@ export default function RecentLawns() {
       frequency: "Monthly",
       note: "Only mow the front yard and around the driveway.",
     },
+       {
+      image: "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
+      city: "Kansas City, Missouri",
+      location: "Near Routine Yard Maintenance near Robertson",
+      price: 60,
+      lastMowed: "3 weeks ago",
+      frequency: "Monthly",
+      note: "Only mow the front yard and around the driveway.",
+    },
+       {
+      image: "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
+      city: "Kansas City, Missouri",
+      location: "Near Routine Yard Maintenance near Robertson",
+      price: 60,
+      lastMowed: "3 weeks ago",
+      frequency: "Monthly",
+      note: "Only mow the front yard and around the driveway.",
+    },
+    {
+      image: "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
+      city: "Kansas City, Missouri",
+      location: "Near Routine Yard Maintenance near Robertson",
+      price: 60,
+      lastMowed: "3 weeks ago",
+      frequency: "Monthly",
+      note: "Only mow the front yard and around the driveway.",
+    },
+    {
+      image: "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
+      city: "Kansas City, Missouri",
+      location: "Near Routine Yard Maintenance near Robertson",
+      price: 52,
+      lastMowed: "1 month ago",
+      frequency: "Bi-weekly",
+      note: "Please trim the edges and avoid the flower beds in the front yard.",
+    },
+    {
+      image: "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
+      city: "Kansas City, Missouri",
+      location: "Near Routine Yard Maintenance near Robertson",
+      price: 60,
+      lastMowed: "3 weeks ago",
+      frequency: "Monthly",
+      note: "Only mow the front yard and around the driveway.",
+    },
+       {
+      image: "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
+      city: "Kansas City, Missouri",
+      location: "Near Routine Yard Maintenance near Robertson",
+      price: 60,
+      lastMowed: "3 weeks ago",
+      frequency: "Monthly",
+      note: "Only mow the front yard and around the driveway.",
+    },
   ];
 
   return (
@@ -81,6 +135,8 @@ export default function RecentLawns() {
             frequency="Weekly"
             note="I want the front and sides of the house mowed twice a month, the far back just once a month. I do not want the inside of the fenced back yard mowed at this time. Let me know if you have more questions."
           />
+
+
         ))}
       </Box>
 

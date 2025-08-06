@@ -58,7 +58,7 @@ export default function Leaderboard() {
         }}
       >
         {/* Example: 3 Cards */}
-        {[1, 2, 3].map((id) => (
+        {[1, 2, 3,4, 5, 6].map((id) => (
           <Box
             key={id}
             sx={{

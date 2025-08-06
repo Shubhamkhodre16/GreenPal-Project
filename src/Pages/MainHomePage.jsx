@@ -11,6 +11,9 @@ import RecentLawns from "../components/RecentLawns";
 import GreenPalWorks from "../components/GreenPalWorks";
 import AboutColumbiaSection from "../components/AboutColumbiaSection";
 import RankInfoCard from "../components/RankInfoCard";
+import ReviewSection from "../components/ReviewSection";
+import Footer from "../components/Footer";
+import LawnService from "../components/LawnService";
 // import LawnServiceSteps from "../components/LawnServiceSteps";
 
 const MainHomePage = () => {
@@ -28,7 +31,10 @@ const MainHomePage = () => {
       <RecentLawns />
       <GreenPalWorks />
       <AboutColumbiaSection />
+      <ReviewSection/>
       <RankInfoCard />
+      <LawnService/>
+      <Footer/>
     </div>
   );
 };
