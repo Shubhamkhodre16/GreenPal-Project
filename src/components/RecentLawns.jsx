@@ -5,17 +5,18 @@ import LawnCard from "./LawnCard";
 export default function RecentLawns() {
   const lawns = [
     {
-      image: "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
+      image:
+        "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
       city: "Kansas City, Missouri",
       location: "Near Routine Yard Maintenance near Robertson",
       price: 45,
       lastMowed: "2 months ago",
       frequency: "Weekly",
-      note:
-        "I want the front and sides of the house mowed twice a month, the far back just once a month. I do not want the inside of the fenced back yard mowed at this time. Let me know if you have more questions.",
+      note: "I want the front and sides of the house mowed twice a month, the far back just once a month. I do not want the inside of the fenced back yard mowed at this time. Let me know if you have more questions.",
     },
     {
-      image: "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
+      image:
+        "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
       city: "Kansas City, Missouri",
       location: "Near Routine Yard Maintenance near Robertson",
       price: 52,
@@ -24,7 +25,8 @@ export default function RecentLawns() {
       note: "Please trim the edges and avoid the flower beds in the front yard.",
     },
     {
-      image: "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
+      image:
+        "https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg",
       city: "Kansas City, Missouri",
       location: "Near Routine Yard Maintenance near Robertson",
       price: 60,
@@ -69,18 +71,16 @@ export default function RecentLawns() {
         }}
       >
         {lawns.map((lawn, index) => (
-         <LawnCard
-  image="https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg"
-  city="Kansas City, Missouri"
-  location="Near Routine Yard Maintenance near Robertson"
-  price={45}
-  rate={75}
-  lastMowed="2 months ago"
-  frequency="Weekly"
-  note="I want the front and sides of the house mowed twice a month, the far back just once a month. I do not want the inside of the fenced back yard mowed at this time. Let me know if you have more questions."
-/>
-
-
+          <LawnCard
+            image="https://static4.depositphotos.com/1007968/368/i/450/depositphotos_3687189-stock-photo-manicured-yard.jpg"
+            city="Kansas City, Missouri"
+            location="Near Routine Yard Maintenance near Robertson"
+            price={45}
+            rate={75}
+            lastMowed="2 months ago"
+            frequency="Weekly"
+            note="I want the front and sides of the house mowed twice a month, the far back just once a month. I do not want the inside of the fenced back yard mowed at this time. Let me know if you have more questions."
+          />
         ))}
       </Box>
 

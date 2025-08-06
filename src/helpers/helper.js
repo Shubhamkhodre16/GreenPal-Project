@@ -20,4 +20,53 @@ export const lawnPros = [
     reviews: 120,
     price: 80,
   },
+  {
+    name: "EcoLawn Services",
+    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    rating: 4.9,
+    reviews: 120,
+    price: 80,
+  },
+  {
+    name: "EcoLawn Services",
+    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    rating: 4.9,
+    reviews: 120,
+    price: 80,
+  },
+];
+
+export const vendorList = [
+  {
+    name: "Green Lawn Care",
+    location: "Nashville, TN 37220",
+    note: "I love Mercury Greens they always do such a detailed job.",
+    date: "Aug 8, 2025",
+    area: "Full Service Lawn Care near Timberwood",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Eco Grass Pros",
+    location: "Cincinnati, OH 45202",
+    note: "They arrived on time and made my lawn look fantastic.",
+    date: "Aug 5, 2025",
+    area: "Service near Vine Street",
+    avatar: "https://randomuser.me/api/portraits/men/45.jpg",
+  },
+  {
+    name: "Eco Grass Pros",
+    location: "Cincinnati, OH 45202",
+    note: "They arrived on time and made my lawn look fantastic.",
+    date: "Aug 5, 2025",
+    area: "Service near Vine Street",
+    avatar: "https://randomuser.me/api/portraits/men/45.jpg",
+  },
+  {
+    name: "Eco Grass Pros",
+    location: "Cincinnati, OH 45202",
+    note: "They arrived on time and made my lawn look fantastic.",
+    date: "Aug 5, 2025",
+    area: "Service near Vine Street",
+    avatar: "https://randomuser.me/api/portraits/men/45.jpg",
+  },
 ];

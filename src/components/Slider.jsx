@@ -15,32 +15,37 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { lawnPros } from "../helpers/helper";
+import useStyles from "./style";
 
 export default function LawnProSlider() {
+  const classes = useStyles();
+
   return (
     <Box sx={{ mt: 0 }}>
       <Typography
         variant="h6"
         sx={{
-          color: "white",
-          textAlign: "center",
-          mb: 2,
-          fontWeight: "bold",
-          textTransform: "none",
+          mt: 2,
+          mb: 1,
         }}
+        className={classes.slider_title}
       >
-        Hire a Trusted Lawn Pro
-      </Typography>
+        Got a free instant quote ↴
+      </Typography>{" "}
       <Swiper
-        spaceBetween={20}
-        slidesPerView={1}
+        spaceBetween={10}
+        slidesPerView={1.1}
         pagination={{ clickable: true }}
         modules={[Pagination]}
-        style={{ paddingBottom: 30 }}
+        style={{
+          paddingLeft: 20,
+          paddingRight: 20,
+          paddingBottom: 30,
+        }}
         breakpoints={{
-          600: { slidesPerView: 1 },
-          900: { slidesPerView: 4 },
-          1200: { slidesPerView: 6 },
+          600: { slidesPerView: 2 },
+          900: { slidesPerView: 2 },
+          1200: { slidesPerView: 4 },
         }}
       >
         {lawnPros?.map((pro, index) => (
@@ -50,52 +55,35 @@ export default function LawnProSlider() {
                 sx={{
                   width: 300,
                   borderRadius: 4,
-                  height: 280,
+                  height: 160,
                   position: "relative",
                 }}
               >
-                {/* Mowing Chip in Top-Right */}
-                <Chip
-                  label={
-                    <Box sx={{ textAlign: "center" }}>
-                      ${pro.price}
-                      <Typography
-                        variant="caption"
-                        display="block"
-                        sx={{ lineHeight: 1 }}
-                      >
-                        /mowing
-                      </Typography>
-                    </Box>
-                  }
-                  size="small"
-                  sx={{
-                    position: "absolute",
-                    top: 8,
-                    right: 8,
-                    backgroundColor: "#FF9900",
-                    color: "white",
-                    fontWeight: "bold",
-                    borderRadius: "8px",
-                    px: 0.5,
-                    py: 1.5,
-                    height: "40px",
-                    fontSize: "14px",
-                    zIndex: 1,
-                  }}
-                />
+                <div className={classes.price_chip_div}>
+                  <span style={{ fontSize: "16px" }}>${pro.price}</span>
+                  <span style={{ fontSize: "11px" }}>/mowing</span>
+                </div>
+
                 <CardContent sx={{ p: 2 }}>
-                  <Stack direction="row" spacing={2} alignItems="center">
-                    <Avatar src={pro.image} sx={{ width: 56, height: 56 }} />
+                  <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
+                    <Avatar
+                      src={pro.image}
+                      sx={{ mt: 2, width: 60, height: 60 }}
+                    />
                     <Box>
                       <Typography
                         variant="subtitle1"
-                        fontWeight="bold"
-                        sx={{ fontSize: "14px", mb: 0.5 }}
+                        className={classes.available_txt}
+                      >
+                        ✅ Available
+                      </Typography>
+                      <Typography
+                        variant="subtitle1"
+                        className={classes.name_text}
                       >
                         {pro.name}
                       </Typography>
-                      <Box display="flex" alignItems="center">
+                      <Box className={classes.rating_div}>
                         <Rating
                           name="read-only"
                           value={pro.rating}
@@ -106,33 +94,33 @@ export default function LawnProSlider() {
                         />
                         <Typography
                           variant="caption"
-                          sx={{ fontSize: "13px", ml: 0.5 }}
+                          className={classes.review_text}
                         >
-                          ({pro.reviews} reviews)
+                          (4.5/5 {pro.reviews} reviews)
                         </Typography>
                       </Box>
                       <Typography
                         variant="body2"
-                        sx={{ fontSize: "13px", mt: 0.5 }}
+                        className={classes.pricecut_text}
+                        sx={{ mt: 0.5 }}
                       >
-                        <strong>$Avg. Price:</strong>${pro.price} per cut
+                        <strong>
+                          <span style={{ color: "#018c16" }}>$</span> Avg.
+                          Price:
+                        </strong>{" "}
+                        ${pro.price} per cut
                       </Typography>
+                      <Button
+                        variant="outlined"
+                        sx={{
+                          mt: 2,
+                        }}
+                        className={classes.seeprice_btn}
+                      >
+                        See Price
+                      </Button>
                     </Box>
                   </Stack>
-                  {/* Hire Me Button */}
-                  <Button
-                    variant="outlined"
-                    sx={{
-                      mt: 2,
-                      borderRadius: "20px",
-                      fontWeight: "bold",
-                      textTransform: "none",
-                      width: "100px",
-                      paddingLeft: "30px",
-                    }}
-                  >
-                    Hire Me
-                  </Button>
                 </CardContent>
               </Card>
             </Box>

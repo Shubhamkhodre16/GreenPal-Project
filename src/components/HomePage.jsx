@@ -72,6 +72,15 @@ const HomePage = () => {
         </Box>
       </Box>
       <Slider />
+      {/* <img
+        style={{
+          width: "100%",
+          display: "block",
+          bottom: 0,
+        }}
+        alt=""
+        src="/assests/images/reviewsimg.png"
+      /> */}
     </Box>
   );
 };
